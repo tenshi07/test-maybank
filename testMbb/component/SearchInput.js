@@ -67,7 +67,7 @@ const SearchInput = (props) => {
                 }}
                 onFail={(err) => console.log('error', err)}
                 query={{
-                    key: 'AIzaSyBX_-B0YeOQgHLecLS7kulIHb6WzC2wCpw',
+                    key: '',
                     language: 'en',
                 }}
                 styles={{
