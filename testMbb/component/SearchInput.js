@@ -50,9 +50,6 @@ const SearchInput = (props) => {
                 renderRightButton={() => <TouchableOpacity style={styles.clearButtonContainer} onPress={clearButtonPress}><Image source={ClearButton} style={{ height: 20, width: 20 }} /></TouchableOpacity>}
                 fetchDetails={true} // you need this to fetch the details object onPress
                 onPress={(data, details = null) => {
-                    // console.log('detailsPlace', details)
-                    // console.log('datap;ace', data);
-                    // console.log('datap;ace', util.inspect(data, false, null, false));
                     setSearchValue({
                         latitude: details?.geometry?.location?.lat,
                         longitude: details?.geometry?.location?.lng,
@@ -63,11 +60,11 @@ const SearchInput = (props) => {
                         latitude: details?.geometry?.location?.lat,
                         longitude: details?.geometry?.location?.lng
                     })
-                    // selectAutocompleteData(details)
+                    selectAutocompleteData(details)
                 }}
                 onFail={(err) => console.log('error', err)}
                 query={{
-                    key: '',
+                    key: 'API KEY HERE',
                     language: 'en',
                 }}
                 styles={{

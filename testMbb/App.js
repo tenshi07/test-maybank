@@ -24,7 +24,6 @@ import SearchInput from './component/SearchInput';
 import DetailCard from './component/DetailCard';
 import { windowHeight, windowWidth } from './utils/function';
 import store from './utils/store';
-import { GooglePlaces } from './utils/apiCalled';
 
 
 function App(){
@@ -36,16 +35,6 @@ function App(){
   const backgroundStyle = {
     backgroundColor: Colors.light
   };
-
-  // console.log('searchValue', store);
-
-  // const apiCalled = () => {
-  //   try {
-  //     const places = await GooglePlaces()
-  //   } catch(err) {
-  //     console.log('errpr from API', err)
-  //   }
-  // }r
 
   return (
     <Provider store={store}>
